@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Burned&display=swap');
+body {
+    background-image: url('shutterstock_1541372228.png');
+    background-position-y: -117.84px;
+    color: white;
+}
+
+button {
+    height: 37px;
+    border-radius: 9999px;
+    background-color: #35515d;
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.p1 {
+    font-family: 'Montserrat';
+}
+
+.p2 {
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.card {
+    width: 281.44px;
+    height: 350px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3d525f;
+    z-index: 1;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3d48;
+    clip-path: path(
+        'M 220 0 Q 115 115, 200 235 Q 240 300, 200 350 L 0 350 L 0 0 Z'
+    );
+    z-index: 2;
+}
+
+.circle {
+    border: 4px solid #ffffff;
+    margin-top: 65px;
+    height: 137px;
+    width: 137px;
+    border-radius: 50%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-weight: 400;
+    font-size: 32px;
+    position: absolute;
+    bottom: 28px;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-position-x: -290px;
+    }
+}
