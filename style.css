@@ -58,7 +58,15 @@ button {
     clip-path: path(
         'M 220 0 Q 115 115, 200 235 Q 240 300, 200 350 L 0 350 L 0 0 Z'
     );
-    z-index: 2;
+    z-index: 1;
+}
+
+.get-started::after {
+    background: linear-gradient(120deg, #d81b24 0%, #1a3751 100%);
+}
+
+.get-started::before {
+    background: linear-gradient(120deg, #f24e56 0%, #283c4e 100%);
 }
 
 .circle {
