@@ -7,7 +7,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body class="relative max-h-screen overflow-hidden">
+    <body class="relative max-h-screen lg:overflow-hidden overflow-y-auto">
         <div class="w-full flex flex-row justify-between">
             <img
                 class="mt-[23px] ml-[53px] w-[138px] h-[35px]"
@@ -15,9 +15,11 @@
                 alt="logo"
             />
             <div
-                class="flex flex-row items-center gap-[16px] mt-[39px] mr-[345px]"
+                class="flex flex-row items-center gap-[16px] mt-[23px] lg:mt-[39px] mr-[10px] lg:mr-[345px]"
             >
-                <button class="w-[200px]">
+                <button
+                    class="w-[150px] sm:w-[180px] md:w-[200px] bg-[#35515d]"
+                >
                     <svg
                         width="20"
                         height="16"
@@ -33,7 +35,9 @@
 
                     6 CONNECTED
                 </button>
-                <button class="w-[141px]">
+                <button
+                    class="w-[120px] sm:w-[150px] md:w-[141px] bg-[#35515d]"
+                >
                     <svg
                         width="18"
                         height="19"
@@ -52,9 +56,18 @@
             </div>
         </div>
         <div id="main" class="flex flex-col items-center">
-            <p class="mt-[75px] text-[30px] p1">Experios presents</p>
-            <p class="text-[80px] p2">BLACKEYE'S TREASURE</p>
-            <div id="cards" class="flex flex-row mt-[99px] gap-[15px]">
+            <p class="mt-[30px] text-[20px] lg:mt-[75px] lg:text-[30px] p1">
+                Experios presents
+            </p>
+            <p
+                class="w-[90%] text-center text-[40px] md:text-[60px] lg:text-[80px] p2"
+            >
+                BLACKEYE'S TREASURE
+            </p>
+            <div
+                id="cards"
+                class="grid grid-cols-1 md:grid-cols-2 md:gap-x-[30px] gap-y-[10px] lg:gap-y-[0px] lg:flex lg:flex-row mt-[99px] mb-[30px] lg:mb-[0px] lg:gap-[15px]"
+            >
                 <div class="card">
                     <div class="circle">
                         <svg
